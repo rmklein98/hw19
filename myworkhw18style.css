@@ -1,0 +1,56 @@
+body {
+    font-family: plus jakarta sans;
+}
+.myWork {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+        "header header"
+        "image1 info1"
+        "image2 info2";
+    gap: 20px;
+    padding: 40px;
+}
+
+.myWork h1 {
+    grid-area: header;
+    font-size: 55px;
+    text-align: center;
+    margin: 0;
+}
+
+.viewall{
+    text-align: center;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 30%;
+    height: auto;
+}
+
+.project button {
+    background-color: #9878cc;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    transition: background-color 0.5s ease;
+}
+
+.project button:hover {
+    background-color: #543b7b;
+}
+
+.myWork h3 {
+    grid-area: info2;
+    font-size: 20px;
+    margin-top: 20px;
+}
